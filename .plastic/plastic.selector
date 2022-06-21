@@ -1,0 +1,4 @@
+repository "Drown me not@local"
+  path "/"
+    br "/main"
+    co "/main"
