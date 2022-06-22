@@ -17,8 +17,8 @@ public class SquareRepulsion : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         velocity.x = 0;
         velocity.y = 0;
-        radius.x = 4;
-        radius.y = 4;
+        radius.x = 2;
+        radius.y = 2;
         isGrounded = false;
     }
 
