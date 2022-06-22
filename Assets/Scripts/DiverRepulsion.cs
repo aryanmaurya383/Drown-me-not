@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class SquareRepulsion : MonoBehaviour
+public class DiverRepulsion : MonoBehaviour
 {
     public static Rigidbody2D rb;
     public static Vector2 mouseWorldPosition;
