@@ -1,4 +1,0 @@
-repository "Drown me not@Drown_me_not@cloud"
-  path "/"
-    br "/main"
-    co "/main"

@@ -10,7 +10,11 @@ public class DiverRepulsion : MonoBehaviour
     public static Vector2 mouseWorldPosition;
     public Vector2 velocity;
     public static Vector2 radius;
-    bool isGrounded;
+    public bool isGrounded;
+    public static float relativeMousePlayerUnitPosition;
+    public bool diverFacingRight;
+
+    
     
     void Start()
     {
@@ -20,8 +24,12 @@ public class DiverRepulsion : MonoBehaviour
         radius.x = 2;
         radius.y = 2;
         isGrounded = false;
+        diverFacingRight = true;
     }
 
+    
+    
+    
     public void playerMovement(Vector2 mouseWorldPosition, Rigidbody2D rb, Vector2 radius, Vector2 velocity)
     {
         //Initial rigidbody location
@@ -62,14 +70,22 @@ public class DiverRepulsion : MonoBehaviour
             velocity.x = 0;
         }
     }
-    public void Restart()
+   
+    
+    
+    
+    public static void Restart()
     {
         //Destroys the gameobject
-        Destroy(gameObject);
+        Destroy(rb.gameObject);
         
         //Restarts the level
         SceneManager.LoadScene(0);
     }
+    
+    
+    
+    
     
     // Update is called once per frame
     void Update()
@@ -79,17 +95,38 @@ public class DiverRepulsion : MonoBehaviour
         mouseWorldPosition.x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
         mouseWorldPosition.y = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
 
+
+        
+        relativeMousePlayerUnitPosition = transform.position.x - mouseWorldPosition.x / Mathf.Abs(transform.position.x - mouseWorldPosition.x);
         //Player Movement
         playerMovement(mouseWorldPosition, rb, radius, velocity);
-        
-        
+
+        if (mouseWorldPosition.x >= transform.position.x && !diverFacingRight)
+        {
+            //this.GetComponent<SpriteRenderer>().flipX = false;
+            transform.Rotate(0f, 180f, 0f);
+            diverFacingRight = true;
+            
+        }
+        else if (mouseWorldPosition.x < transform.position.x && diverFacingRight)
+        {
+            //this.GetComponent<SpriteRenderer>().flipX = true;
+            transform.Rotate(0f, 180f, 0f);
+            diverFacingRight = false;
+            
+        }
+
         //If left click and player is on ground then jump
         if (Input.GetMouseButtonUp(0) && isGrounded)
         {
-            rb.AddForce(new Vector2(0f, 300f));
+            rb.AddForce(new Vector2(0f, 400f));
         }
 
     }
+    
+    
+    
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Ground")
@@ -98,6 +135,10 @@ public class DiverRepulsion : MonoBehaviour
         }
         
     }
+   
+    
+    
+    
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Ground")
@@ -107,6 +148,10 @@ public class DiverRepulsion : MonoBehaviour
         
     }
 
+  
+    
+    
+    
     //if cursor enters the box ie. touches the box, then Restart
     private void OnMouseEnter()
     {
