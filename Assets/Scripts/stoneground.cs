@@ -8,8 +8,12 @@ public class stoneground : MonoBehaviour
     private bool first_stone = true;
     private int max_bounces = 2;
     private int right_click = 0;
-    
+    private float timeSinceRest;
 
+    private void Start()
+    {
+        timeSinceRest = 0;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         collision_counter++;
@@ -28,15 +32,20 @@ public class stoneground : MonoBehaviour
         {
             first_stone = false;
         }
-        if (collision_counter == max_bounces)
+        if (collision_counter == max_bounces || timeSinceRest>0.5)
         {
             collision_counter = 0;
+            timeSinceRest = 0;
             if (!first_stone)
             {
                 Destroy(this.gameObject);
             }
 
 
+        }
+        if(Projectile.rb.velocity == new Vector2(0, 0))
+        {
+            timeSinceRest += Time.deltaTime;
         }
     }
 }

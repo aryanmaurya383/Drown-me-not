@@ -6,7 +6,7 @@ public class Enemy_movement_vertical : MonoBehaviour
 {
     public float speed;
     public bool MoveRight;
-
+    
 
     // Start is called before the first frame update
     void Start()

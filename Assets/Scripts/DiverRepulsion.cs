@@ -122,6 +122,11 @@ public class DiverRepulsion : MonoBehaviour
             rb.AddForce(new Vector2(0f, 400f));
         }
 
+        if(CameraMovement.cameraPosition.position.x-rb.position.x > 12)
+        {
+            Restart();
+        }
+
     }
     
     
@@ -129,7 +134,7 @@ public class DiverRepulsion : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
         }
@@ -141,7 +146,7 @@ public class DiverRepulsion : MonoBehaviour
     
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
         }
