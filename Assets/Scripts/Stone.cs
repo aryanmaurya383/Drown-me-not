@@ -16,12 +16,12 @@ public class Stone : MonoBehaviour
     void Start()
      {
     
-        vectorAtRight.x = DiverRepulsion.rb.position.x + (float)1.2;
-        vectorAtRight.y = DiverRepulsion.rb.position.y;
-        vectorAtRight.z = 0;
-        vectorAtLeft.x = DiverRepulsion.rb.position.x - (float)1.2;
-        vectorAtLeft.y = DiverRepulsion.rb.position.y;
-        vectorAtLeft.z = 0;
+        //vectorAtRight.x = DiverRepulsion.rb.position.x + (float)1.2;
+        //vectorAtRight.y = DiverRepulsion.rb.position.y;
+        //vectorAtRight.z = 0;
+        //vectorAtLeft.x = DiverRepulsion.rb.position.x - (float)1.2;
+        //vectorAtLeft.y = DiverRepulsion.rb.position.y;
+        //vectorAtLeft.z = 0;
     
     }
 
@@ -29,7 +29,7 @@ public class Stone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(fireposition.position);
+        
         vectorAtRight.x = DiverRepulsion.rb.position.x + (float)1.2;
         vectorAtRight.y = DiverRepulsion.rb.position.y;
         vectorAtRight.z = 0;

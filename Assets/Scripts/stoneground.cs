@@ -43,7 +43,7 @@ public class stoneground : MonoBehaviour
 
 
         }
-        if(Projectile.rb.velocity == new Vector2(0, 0))
+        if(Projectile.rb && Projectile.rb.velocity == new Vector2(0, 0))
         {
             timeSinceRest += Time.deltaTime;
         }

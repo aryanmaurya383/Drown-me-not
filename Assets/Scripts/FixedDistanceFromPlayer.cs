@@ -13,6 +13,9 @@ public class FixedDistanceFromPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(DiverRepulsion.rb.position.x + 20f, -4.8f, 0);
+        if (DiverRepulsion.rb)
+        {
+            transform.position = new Vector3(DiverRepulsion.rb.position.x + 20f, -4.8f, 0);
+        }
     }
 }
