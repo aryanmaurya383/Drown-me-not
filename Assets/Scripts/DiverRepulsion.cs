@@ -12,7 +12,7 @@ public class DiverRepulsion : MonoBehaviour
     public static Vector2 radius;
     public bool isGrounded;
     public static float relativeMousePlayerUnitPosition;
-    public bool diverFacingRight;
+    public static bool diverFacingRight;
 
     
     

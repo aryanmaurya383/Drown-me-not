@@ -32,23 +32,22 @@ public class GroundManager : MonoBehaviour
 
     public void GroundSpawn()
     {
-        int randomNum = Random.Range(1, 5);
-        
+        int randomNum = Random.Range(1, 5);       
         if (randomNum == 1)
         {
-            Instantiate(Ground1, new Vector3(transform.position.x + 16, -3.9f, 0f), Quaternion.identity);
+            Instantiate(Ground1, new Vector3(transform.position.x + 12, -3.7f, 0f), Quaternion.identity);
         }
         else if (randomNum == 2)
         {
-            Instantiate(Ground2, new Vector3(transform.position.x + 16, -3.85f, 0f), Quaternion.identity);
+            Instantiate(Ground2, new Vector3(transform.position.x + 9, -3.7f, 0f), Quaternion.identity);
         }
         else if (randomNum == 3)
         {
-            Instantiate(Ground3, new Vector3(transform.position.x + 16, -2.26f, 0f), Quaternion.identity);
+            Instantiate(Ground3, new Vector3(transform.position.x + 15, -2.26f, 0f), Quaternion.identity);
         }
         else if (randomNum == 4)
         {
-            Instantiate(Ground4, new Vector3(transform.position.x + 16, -3.75f, 0f), Quaternion.identity);
+            Instantiate(Ground4, new Vector3(transform.position.x + 15, -3.75f, 0f), Quaternion.identity);
         }
     }
     
