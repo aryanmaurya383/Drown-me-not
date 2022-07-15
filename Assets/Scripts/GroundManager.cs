@@ -8,6 +8,7 @@ public class GroundManager : MonoBehaviour
     public GameObject Ground2;
     public GameObject Ground3;
     public GameObject Ground4;
+    public static Transform transformPos;
 
     public bool hasGround;
     private Vector3 prevPosition;
@@ -16,6 +17,7 @@ public class GroundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transformPos = GetComponent<Transform>();
         hasGround = true;
         prevPosition = DiverRepulsion.rb.position;
     }
@@ -28,6 +30,8 @@ public class GroundManager : MonoBehaviour
             GroundSpawn();
             prevPosition = transform.position;
         }
+        transformPos = GetComponent<Transform>();
+        Debug.Log(transformPos.position);
     }
 
     public void GroundSpawn()

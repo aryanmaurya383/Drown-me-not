@@ -128,25 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4725565707267812618, guid: 150bd304b9eabdb4e98cd4a0fdb0f6c4, type: 3}
   m_PrefabInstance: {fileID: 3866621202906832301}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &809551042 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4352468990277656438, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
-  m_PrefabInstance: {fileID: 4352468988804479455}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &809551048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809551042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9423761318f7764d888647e7f3dcd2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 506915548}
-  GameManager: {fileID: 1482535782}
 --- !u!4 &1482535782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3649523078619702993, guid: dc46455e572f9d84ea20164cdc6e4e14, type: 3}
@@ -630,6 +611,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2057046140557942412, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 506915548}
+    - target: {fileID: 2057046140557942412, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 1482535782}
     - target: {fileID: 4352468990277656435, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
       propertyPath: m_RootOrder
       value: 8
