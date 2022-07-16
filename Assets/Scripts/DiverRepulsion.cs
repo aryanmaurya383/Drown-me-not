@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class DiverRepulsion : MonoBehaviour
 {
     public static Rigidbody2D rb;
+
     public static Vector2 mouseWorldPosition;
     public Vector2 velocity;
     public static Vector2 radius;
-    public bool isGrounded;
+    
     public static float relativeMousePlayerUnitPosition;
+    public bool isGrounded;
     public static bool diverFacingRight;
 
     
@@ -19,10 +21,13 @@ public class DiverRepulsion : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
         velocity.x = 0;
         velocity.y = 0;
+        
         radius.x = 2;
         radius.y = 2;
+                
         isGrounded = false;
         diverFacingRight = true;
     }

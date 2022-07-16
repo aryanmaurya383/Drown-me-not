@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right *speed ;
         
+
     }
     
 }

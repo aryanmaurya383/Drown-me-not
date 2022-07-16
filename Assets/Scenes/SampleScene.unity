@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4352468990277656435, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.53
+      value: -9.48
       objectReference: {fileID: 0}
     - target: {fileID: 4352468990277656435, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
       propertyPath: m_LocalPosition.y
@@ -715,7 +715,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4352468990277656434, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 27d7b8edf98b0f74db8b981ebcc1b869, type: 3}
 --- !u!1001 &4417387111582563493
 PrefabInstance:
@@ -819,7 +820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5399820514811070313, guid: 65391528821435f42b352eb134251dbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.76
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 5399820514811070313, guid: 65391528821435f42b352eb134251dbd, type: 3}
       propertyPath: m_LocalPosition.y

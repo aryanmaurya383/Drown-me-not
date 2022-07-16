@@ -34,6 +34,7 @@ public class Stone : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             Instantiate(projectile, fireposition.position , fireposition.rotation);
+            
 
         }
         if ( DiverRepulsion.mouseWorldPosition.x > DiverRepulsion.rb.transform.position.x)
