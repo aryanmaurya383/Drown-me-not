@@ -20,7 +20,7 @@ public class ManaBar : MonoBehaviour
     void Update()
     {
         
-        if (Mathf.Abs(DiverRepulsion.rb.position.x - DiverRepulsion.mouseWorldPosition.x)  < DiverRepulsion.radius.x && Mathf.Abs((DiverRepulsion.rb.position.y - Camera.main.ScreenToWorldPoint(Input.mousePosition).y) ) < DiverRepulsion.radius.y)
+        if (DiverRepulsion.rb && ( Mathf.Abs(DiverRepulsion.rb.position.x - DiverRepulsion.mouseWorldPosition.x)  < DiverRepulsion.radius.x && Mathf.Abs((DiverRepulsion.rb.position.y - Camera.main.ScreenToWorldPoint(Input.mousePosition).y) ) < DiverRepulsion.radius.y))
         {
             
 

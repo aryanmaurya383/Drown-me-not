@@ -98,8 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ef07feee1d335438da89e207008049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftClickCursor: {fileID: 21300000, guid: 488ac227d964b134da46663bf14a1739, type: 3}
-  normalCursor: {fileID: 0}
+  leftClickCursor: {fileID: 21300000, guid: cf7a90fbdc178bf4d873d749e134189d, type: 3}
+  normalCursor: {fileID: 21300000, guid: 0a92cbc5f44fdf04e81b897c0bba78b4, type: 3}
+  timeBtwSpawn: 0
+  clickEffect: {fileID: 4417387110676706535}
+  trailEffect: {fileID: 4417387110676706535}
   fishFacingLeft: 0
 --- !u!95 &2959412911939864
 Animator:

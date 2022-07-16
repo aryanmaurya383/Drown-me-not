@@ -17,7 +17,10 @@ public class GroundManager : MonoBehaviour
     void Start()
     {
         hasGround = true;
-        prevPosition = DiverRepulsion.rb.position;
+        if (DiverRepulsion.rb)
+        {
+            prevPosition = DiverRepulsion.rb.position;
+        }
     }
 
     // Update is called once per frame
@@ -35,11 +38,11 @@ public class GroundManager : MonoBehaviour
         int randomNum = Random.Range(1, 5);       
         if (randomNum == 1)
         {
-            Instantiate(Ground1, new Vector3(transform.position.x + 12, -3.7f, 0f), Quaternion.identity);
+            Instantiate(Ground1, new Vector3(transform.position.x + 16, -3.9f, 0f), Quaternion.identity);
         }
         else if (randomNum == 2)
         {
-            Instantiate(Ground2, new Vector3(transform.position.x + 9, -3.7f, 0f), Quaternion.identity);
+            Instantiate(Ground2, new Vector3(transform.position.x + 12, -3.7f, 0f), Quaternion.identity);
         }
         else if (randomNum == 3)
         {

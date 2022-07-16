@@ -8,8 +8,7 @@ public class mouseCursor : MonoBehaviour
     public Sprite leftClickCursor;
     public Sprite normalCursor;
     public float timeBtwSpawn;
-    public GameObject clickEffect;
-    public GameObject trailEffect;
+    
 
     public bool fishFacingLeft;
     private void Start()
@@ -19,6 +18,7 @@ public class mouseCursor : MonoBehaviour
         Cursor.visible = false;
         timeBtwSpawn = 0.1f;
         rend = GetComponent<SpriteRenderer>();
+       
     }
     void Update()
     {
@@ -41,21 +41,12 @@ public class mouseCursor : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             rend.sprite = leftClickCursor;
-            Instantiate(clickEffect, transform.position, Quaternion.identity);
         }
         else if (Input.GetMouseButtonUp(0))
         {
             rend.sprite = normalCursor;
         }
 
-        if (timeBtwSpawn <= 0)
-        {
-            Instantiate(trailEffect, cursorPos, Quaternion.identity);
-            timeBtwSpawn = 0.1f;
-        }
-        else
-        {
-            timeBtwSpawn -= Time.deltaTime;
-        }
+        
     }
 }

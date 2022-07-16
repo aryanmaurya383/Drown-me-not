@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &296744304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5399820514811070313, guid: 65391528821435f42b352eb134251dbd, type: 3}
+  m_PrefabInstance: {fileID: 5399820514644048829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2097385148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 110337314985925735, guid: 2c511cbdee0e3974f919acb24a2738e7, type: 3}
@@ -185,6 +190,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c511cbdee0e3974f919acb24a2738e7, type: 3}
+--- !u!1001 &1329421311006601604
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 296744304}
+    m_Modifications:
+    - target: {fileID: 2817429699995288257, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_Name
+      value: DiverBubbles
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.396
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754354722525268093, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1a9880b2bd271f4384da5fd1e235cd5, type: 3}
 --- !u!1001 &1343739770838532874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,11 +742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4417387110676706528, guid: 4c42a22d83168624fbb130459ef2d86f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5631
+      value: 18.13
       objectReference: {fileID: 0}
     - target: {fileID: 4417387110676706528, guid: 4c42a22d83168624fbb130459ef2d86f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4215
+      value: 5.96
       objectReference: {fileID: 0}
     - target: {fileID: 4417387110676706528, guid: 4c42a22d83168624fbb130459ef2d86f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -718,10 +780,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4417387110676706529, guid: 4c42a22d83168624fbb130459ef2d86f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4417387110676706534, guid: 4c42a22d83168624fbb130459ef2d86f, type: 3}
       propertyPath: clickEffect
       value: 
-      objectReference: {fileID: 6838064115426399705, guid: 4eefc85d56c4e9549b1c72e3b005c7f8, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4417387110676706534, guid: 4c42a22d83168624fbb130459ef2d86f, type: 3}
       propertyPath: trailEffect
       value: 
@@ -795,6 +861,10 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 2097385148}
+    - target: {fileID: 5399820514811070318, guid: 65391528821435f42b352eb134251dbd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5399820514811070322, guid: 65391528821435f42b352eb134251dbd, type: 3}
       propertyPath: m_Name
       value: Diver
