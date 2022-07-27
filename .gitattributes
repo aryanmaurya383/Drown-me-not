@@ -1,0 +1,17 @@
+Library filter=lfs diff=lfs merge=lfs -text
+[[:space:]]Drown[[:space:]]me[[:space:]]not/Library/PackageCache/com.unity.burst@1.6.5/.Runtime/hostmac/lld filter=lfs diff=lfs merge=lfs -text
+*.lld filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+*.dsymutil filter=lfs diff=lfs merge=lfs -text
+Drown[[:space:]]me[[:space:]]not filter=lfs diff=lfs merge=lfs -text
+Gamedoc filter=lfs diff=lfs merge=lfs -text
+ProjectSettings filter=lfs diff=lfs merge=lfs -text
+UserSettings filter=lfs diff=lfs merge=lfs -text
+obj filter=lfs diff=lfs merge=lfs -text
+Assets filter=lfs diff=lfs merge=lfs -text
+Documentation filter=lfs diff=lfs merge=lfs -text
+Drown[[:space:]]me[[:space:]]not.sln filter=lfs diff=lfs merge=lfs -text
+ignore.conf filter=lfs diff=lfs merge=lfs -text
+Assembly-CSharp.csproj filter=lfs diff=lfs merge=lfs -text
+Logs filter=lfs diff=lfs merge=lfs -text
+Packages filter=lfs diff=lfs merge=lfs -text
