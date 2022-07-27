@@ -12,7 +12,7 @@ public class Destroyer : MonoBehaviour
     private void Update()
     {
         timePassed += Time.deltaTime;
-        if (timePassed > 30)
+        if (timePassed > 60)
         {
             timePassed = 0;
             Destroy(this.gameObject);
